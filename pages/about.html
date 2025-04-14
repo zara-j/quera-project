@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./about-style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Concat Me</title>
+  </head>
+  <body>
+    <header class="home-header mx-auto">
+      <!-- Header for mobile screens -->
+      <section class="block lg:hidden">
+        <div class="mobile-header">
+          <div class="hamburger-menu md:hidden">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <h2 class="quera-title block lg:hidden">کوئرا لیست</h2>
+        </div>
+      </section>
+
+      <!-- Header for bigger screens -->
+      <section class="hidden lg:block w-full">
+        <div class="bigscreen-h">
+          <ul class="header__nav-list gap-6">
+            <h2 class="text-xl">کوئرا لیست</h2>
+            <li>صفحه اصلی</li>
+            <li>درباره ما</li>
+            <li>ارتباط با ما</li>
+          </ul>
+          <div class="header__nav items-center gap-2">
+            <button class="btn-1 g-button">ورود به اپلیکیشن</button>
+            <div class="dropdown">
+              <button class="dropdown-toggle" id="theme-toggle">
+                <span class="darkmode-icon"
+                  ><img src="../assets/images/home/SVG/defult-icon.png" alt=""
+                /></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li data-theme="light">
+                  <span class="icon"
+                    ><img src="../assets/images/home/SVG/Brightness.png" alt=""
+                  /></span>
+                  حالت روشن
+                </li>
+                <li data-theme="dark">
+                  <span class="icon"
+                    ><img src="../assets/images/home/SVG/dark-icon.png" alt=""
+                  /></span>
+                  حالت تاریک
+                </li>
+                <li data-theme="system" class="active">
+                  <span class="icon"
+                    ><img
+                      src="../assets/images/home/SVG/defult-icon.png"
+                      alt=""
+                  /></span>
+                  پیروی از دستگاه
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- main parts -->
+    <main>
+        <!-- for desktop -->
+      <section class="hidden lg:block">
+        <div class="about__container container">
+          <div class="desktop__about-right">
+            <h2 class="desktop__about-title">درباره من</h2>
+            <h1 class="desktop__about-title-2">محمد محمدی</h1>
+            <div class="desktop__about-p">
+                <p>
+                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+            </p>
+            <p >
+                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+            </p>
+            <p >
+                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+            </p>
+            </div>
+            
+          </div>
+          <div class="desktop__about-left grid grid-cols-2 gap-4">
+            <img
+              class="desktop__about-photo"
+              src="../assets/images/home/about-me.png"
+              alt="about-me"
+            />
+            <div class="desktop__intro-container grid grid-cols-2 gap-6">
+              <article class="intro-container-info">
+              <h3 class="intro-title">۱۳۷۹</h3>
+              <p class="intro-description">سال تولد</p>
+            </article>
+            <article class="intro-container-info">
+              <h3 class="intro-title">تهران</h3>
+              <p class="intro-description">محل زندگی</p>
+            </article>
+            <article class="intro-container-info">
+              <h3 class="intro-title">۳.۵</h3>
+              <p class="intro-description">سال تجربه کار</p>
+            </article>
+            <article class="intro-container-info">
+              <h3 class="intro-title">۱۰+</h3>
+              <p class="intro-description">مشارکت در پروژه‌</p>
+            </article>  
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- for mobile -->
+      <section class="block lg:hidden">
+        <img
+          class="mobile__about-photo"
+          src="../assets/images/home/about-me.png"
+          alt="about-me"
+        />
+        <div class="mobile__about">
+          <h2 class="mobile__about-title">درباره من</h2>
+          <h1>محمد محمدی</h1>
+          <p>
+            کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر
+            اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود
+            نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده
+            نمایند. کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای
+            معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر
+            دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن
+            استفاده نمایند. کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از
+            استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل
+            علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب
+            آن استفاده نمایند.
+          </p>
+        </div>
+        <div class="mobile__about-introduction grid grid-cols-2 gap-4">
+          <article class="mobile__intro-container">
+            <h3 class="mobile__intro-title">1379</h3>
+            <p class="mobile__intro-description">سال تولد</p>
+          </article>
+          <article class="mobile__intro-container">
+            <h3 class="mobile__intro-title">تهران</h3>
+            <p class="mobile__intro-description">محل زندگی</p>
+          </article>
+          <article class="mobile__intro-container">
+            <h3 class="mobile__intro-title">3.5</h3>
+            <p class="mobile__intro-description">سال تجربه کار</p>
+          </article>
+          <article class="mobile__intro-container">
+            <h3 class="mobile__intro-title">+10</h3>
+            <p class="mobile__intro-description">مشارکت در پروژه‌</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- desktop Footer -->
+    <div class="hidden lg:block xl:block">
+      <footer class="footer container">
+        <div class="footer__title">
+          <hr />
+          <h2>کوئرا لیست</h2>
+          <hr />
+        </div>
+        <section class="footer__part">
+          <ul class="footer__children footer__address">
+            <li>
+              <img
+                class="g-icon"
+                src="../assets/images/home/SVG/fax-solid.svg"
+                alt="fax"
+              />
+              فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱
+            </li>
+            <li>
+              <img
+                class="g-icon"
+                src="../assets/images/home/SVG/phone-solid.svg"
+                alt="phone"
+              />
+              تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱
+            </li>
+            <li>
+              <img
+                class="g-icon"
+                src="../assets/images/home/SVG/location-dot-solid.svg"
+                alt="location"
+              />
+              آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن
+              بست شب بو
+            </li>
+          </ul>
+          <ul class="footer__children">
+            <li class="font-bold">با ما در ارتباط باش</li>
+            <li>
+              اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+              بشی.
+            </li>
+            <li class="relative">
+              <input type="email" name="email" id="email" placeholder="ایمیل" />
+              <button id="email-button" g-button>ارسال</button>
+            </li>
+          </ul>
+        </section>
+        <p class="footer__footer">
+          تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+        </p>
+      </footer>
+    </div>
+
+    <!-- mobile Footer -->
+    <div class="block lg:hidden xl:hidden">
+      <footer class="footer container">
+        <div class="footer__title">
+          <hr />
+          <h2>کوئرا لیست</h2>
+          <hr />
+        </div>
+
+        <section class="mobile__footer-contact">
+          <div class="font-bold">با ما در ارتباط باش</div>
+          <div>
+            اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.
+          </div>
+          <form class="relative">
+            <input type="email" name="email" id="email" placeholder="ایمیل" />
+            <button id="email-button" g-button>ارسال</button>
+          </form>
+        </section>
+
+        <address class="mobile__address-container">
+          <div class="footer__children-style w-1/2 footer__address-style">
+            <img
+              class="g-icon"
+              src="../assets/images/home/SVG/blue-location.png"
+              alt="location"
+            />
+            آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست
+            شب بو
+          </div>
+
+          <div class="footer__phone-container">
+            <div class="footer__phone footer__children-style">
+              <img
+                class="g-icon"
+                src="../assets/images/home/SVG/blue-phone.png"
+                alt="phone"
+              />
+              <div>
+                <p>تلفن پشتیبانی</p>
+                <p>۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+              </div>
+            </div>
+
+            <div class="footer__phone footer__children-style">
+              <img
+                class="g-icon"
+                src="../assets/images/home/SVG/blue-fax.png"
+                alt="fax"
+              />
+              <div>
+                <p>فکس</p>
+                <p>۴۴۴۴۵۵۶۶</p>
+              </div>
+            </div>
+          </div>
+        </address>
+        <p class="footer__footer">
+          تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

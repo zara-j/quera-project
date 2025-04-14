@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Quera List</title>
+  </head>
+  <body>
+    <header class="home-header mx-auto">
+      <!-- Header for mobile screens -->
+      <section class="block lg:hidden">
+        <div class="mobile-header">
+          <div class="hamburger-menu md:hidden">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <h2 class="quera-title block lg:hidden">کوئرا لیست</h2>
+        </div>
+      </section>
+
+      <!-- Header for bigger screens -->
+      <section class="hidden lg:block w-full">
+        <div class="bigscreen-h">
+          <ul class="header__nav-list gap-6">
+            <h2 class="text-xl">کوئرا لیست</h2>
+            <li>صفحه اصلی</li>
+            <li>درباره ما</li>
+            <li>ارتباط با ما</li>
+          </ul>
+          <div class="header__nav items-center gap-2">
+            <button class="btn-1 g-button">ورود به اپلیکیشن</button>
+            <div class="dropdown">
+              <button class="dropdown-toggle" id="theme-toggle">
+                <span class="darkmode-icon"
+                  ><img src="../assets/images/home/SVG/defult-icon.png" alt=""
+                /></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li data-theme="light">
+                  <span class="icon"
+                    ><img src="../assets/images/home/SVG/Brightness.png" alt=""
+                  /></span>
+                  حالت روشن
+                </li>
+                <li data-theme="dark">
+                  <span class="icon"
+                    ><img src="../assets/images/home/SVG/dark-icon.png" alt=""
+                  /></span>
+                  حالت تاریک
+                </li>
+                <li data-theme="system" class="active">
+                  <span class="icon"
+                    ><img
+                      src="../assets/images/home/SVG/defult-icon.png"
+                      alt=""
+                  /></span>
+                  پیروی از دستگاه
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- main title -->
+    <div class="main-title">
+      <div class="title-context">
+        <img
+          class="star-1"
+          src="./assets/images/home/SVG/star.png"
+          alt="star"
+        />
+
+        <h2 class="title-sec z-10 relative">تمرکز رو وارد زندگیت کن</h2>
+        <h1 class="title-first z-10 relative">به سمت اهدافت اوج بگیر</h1>
+        <img class="line z-10" src="./assets/images/home/SVG/line.png" alt="line" />
+        <img
+          class="star-2"
+          src="./assets/images/home/SVG/star.png"
+          alt="star"
+        />
+        <p class="title-text w-full lg:w-1/2">
+          زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از
+          آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و
+          برنامه‌ریزی موثر سپری کنید.
+        </p>
+        <div class="button-container">
+          <button class="btn-1 g-button">ورود به اپلیکیشن</button>
+          <button class="btn-2 g-button">درباره ما</button>
+        </div>
+      </div>
+      <div class="circle-container-1">
+        <div class="circle"></div>
+      </div>
+      <div class="circle-container-2">
+        <div class="circle"></div>
+      </div>
+    </div>
+    <div class="circle-container-3 hidden lg:block">
+      <div class="circle"></div>
+    </div>
+    <div class="circle-container-4  hidden lg:block">
+      <div class="circle"></div>
+    </div>
+    <div class="circle-container-5  hidden lg:block">
+      <div class="circle"></div>
+    </div>
+
+    <main class="main container relative mx-auto">
+      <!-- main image -->
+      <img
+        class="g-img screen-img"
+        src="./assets/images/home/screen-shot-2.png"
+        alt="screen-shot"
+      />
+
+      <!-- feature part -->
+      <div class="feature">
+        <h2 class="feature-title">ویژگی‌های اپلیکیشن کوئرالیست</h2>
+        <p class="feature-description w-full">
+          ما توی تیم کوئرا لیست بر اساس بازخوردهای شما و جدیدترین ترندهای بازار
+          همواره در تلاشیم تا بهترین تجربه کاربری رو براتون به ارمغان بیاریم.
+        </p>
+        <section class="feature__list">
+          <article class="feature-card">
+            <img src="./assets/images/home/SVG/pen.png" alt="pen" />
+            <h3>رابط کاربری جذاب</h3>
+            <div>
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </div>
+          </article>
+          <article class="feature-card">
+            <img src="./assets/images/home/SVG/category.png" alt="" />
+            <h3>قابلیت دسته‌بندی کارها</h3>
+            <div>
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </div>
+          </article>
+          <article class="feature-card">
+            <img src="./assets/images/home/SVG/security.png" alt="checked" />
+            <h3>دسترسی آسان</h3>
+            <div>
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </div>
+          </article>
+          <article class="feature-card bg-white relative z-10">
+            <img src="./assets/images/home/SVG/user2.png" alt="" />
+            <h3>پشتیبانی آنلاین</h3>
+            <div>
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <!-- mobile-application -->
+      <section class="block lg:hidden">
+        <div class="mobile__application">
+          <div class="mobile__application__title">
+            <p class="g-description text-right">اپلیکیشن اندروید و IOS</p>
+            <h2 class="g-title text-right">دانلود اپلیکیشن</h2>
+          </div>
+          <div class="mobile__image-overlay-container">
+            <img
+              class="mobile__application-img-2"
+              src="./assets/images/home/statistic.png"
+              alt="statistic"
+            />
+            <div class="mobile__application-overlay">
+              <p class="mobile__application-description">
+                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای
+                معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه
+                بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب
+                آن استفاده نمایند. <br />
+                همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از
+                اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+              </p>
+              <a class="apk-button" href="#">
+                ورود به اپلیکیشن
+                <img
+                  src="./assets/images/home/SVG/arrow-left.svg"
+                  alt="left arrow"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- desktop application -->
+      <section class="hidden lg:block">
+        <div class="desktop__application">
+          <div class="desktop__application__intro">
+            <p class="desktop__application-description">
+              اپلیکیشن اندروید و IOS
+            </p>
+            <h2 class="desktop__application-title">دانلود اپلیکیشن</h2>
+            <div class="desktop__application-p">
+              <p>
+                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای
+                معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه
+                بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب
+                آن استفاده نمایند.
+              </p>
+              <p>
+                همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از
+                اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+              </p>
+            </div>
+
+            <a class="desktop__apk-button" href="#">
+              ورود به اپلیکیشن
+              <img
+                src="./assets/images/home/SVG/arrow-left.svg"
+                alt="left arrow"
+              />
+            </a>
+          </div>
+          <div class="desktop__image-overlay-container">
+            <img
+              class="application__img-1 g-img"
+              src="./assets/images/home/application.png"
+              alt="application"
+            />
+            <div>
+              <img
+                class="application__img-2 g-img"
+                src="./assets/images/home/statistic.png"
+                alt="statistic"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- desktop user comment's section -->
+      <section class="desktop__comment hidden lg:block">
+        <header class="desktop__comment-title">
+          <div class="g-title text-center">نظرات کاربران</div>
+          <div class="g-description text-center">
+            بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا
+            سازماندهی شوند و به اهداف خود برسند.
+          </div>
+        </header>
+
+        <div class="comment__columns">
+          <article class="comment__user item-1">
+            <div class="comment__author">
+              <img
+                class="comment__img"
+                src="./assets/images/home/user1.png"
+                alt="user1"
+              />
+              <div>
+                <h3>رویا ملکی</h3>
+                <p>مهندس نرم افزار دیجی‌کالا</p>
+              </div>
+            </div>
+            <p class="comment__context">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
+              اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
+              امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+              کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از
+              یکپارچگی اطلاعات و دیتاها لذت ببریم.
+            </p>
+          </article>
+
+          <article class="comment__user item-2">
+            <div class="comment__author">
+              <img
+                class="comment__img"
+                src="./assets/images/home/user2.png"
+                alt="user2"
+              />
+              <div>
+                <h3>رویا ملکی</h3>
+                <p>مهندس نرم افزار دیجی‌کالا</p>
+              </div>
+            </div>
+            <p class="comment__context">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
+              اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
+              امکان رو می‌دهد که سریع تر باشیم
+            </p>
+          </article>
+
+          <article class="comment__user item-3">
+            <div class="comment__author">
+              <img
+                class="comment__img"
+                src="./assets/images/home/user3.png"
+                alt="user3"
+              />
+              <div>
+                <h3>رویا ملکی</h3>
+                <p>مهندس نرم افزار دیجی‌کالا</p>
+              </div>
+            </div>
+            <p class="comment__context">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
+              اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
+              امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+              کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از
+              یکپارچگی اطلاعات و دیتاها لذت ببریم.
+            </p>
+          </article>
+
+          <article class="comment__user item-4 z-10 relative bg-white">
+            <div class="comment__author">
+              <img
+                class="comment__img"
+                src="./assets/images/home/user4.png"
+                alt="user4"
+              />
+              <div>
+                <h3>رویا ملکی</h3>
+                <p>مهندس نرم افزار دیجی‌کالا</p>
+              </div>
+            </div>
+            <p class="comment__context">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
+              اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
+              امکان رو می‌دهد که سریع تر باشیم
+            </p>
+          </article>
+
+          <article class="comment__user item-5">
+            <div class="comment__author">
+              <img
+                class="comment__img"
+                src="./assets/images/home/user5.png"
+                alt="user5"
+              />
+              <div>
+                <h3>رویا ملکی</h3>
+                <p>مهندس نرم افزار دیجی‌کالا</p>
+              </div>
+            </div>
+            <p class="comment__context">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
+              اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
+              امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+              کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از
+              یکپارچگی اطلاعات و دیتاها لذت ببریم.
+            </p>
+          </article>
+
+          <article class="comment__user item-6">
+            <div class="comment__author">
+              <img
+                class="comment__img"
+                src="./assets/images/home/user6.png"
+                alt="user6"
+              />
+              <div>
+                <h3>رویا ملکی</h3>
+                <p>مهندس نرم افزار دیجی‌کالا</p>
+              </div>
+            </div>
+            <p class="comment__context">
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
+              اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
+              امکان رو می‌دهد که سریع تر باشیم
+            </p>
+          </article>
+        </div>
+        <div class="comment__button text-center g-img">
+          <img
+            src="./assets/images/home/SVG/greater-than-solid.png"
+            alt="greater-than"
+          />
+          <img
+            src="./assets/images/home/SVG/less-than-solid.png"
+            alt="less-than"
+          />
+        </div>
+      </section>
+
+      <!-- mobile user's comment -->
+      <section class="mobile__comment block lg:hidden">
+        <header class="mobile__comment-title">
+          <div class="g-mobile-title text-center">نظرات کاربران</div>
+          <div class="g-mobile-description text-center">
+            بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا
+            سازماندهی شوند و به اهداف خود برسند.
+          </div>
+        </header>
+
+        <div class="mobile-comment-container">
+          <article class="mobile__user">
+            <div class="mobile__author">
+              <img
+                class="mobile__comment-img"
+                src="./assets/images/home/user5.png"
+                alt="user1"
+              />
+              <div>
+                <h3>رویا ملکی</h3>
+                <p>مهندس نرم افزار دیجی‌کالا</p>
+              </div>
+            </div>
+            <p>
+              تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی
+              اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این
+              امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی
+              کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از
+              یکپارچگی اطلاعات و دیتاها لذت ببریم.
+            </p>
+          </article>
+        </div>
+
+        <div class="comment__button text-center g-img">
+          <img
+            src="./assets/images/home/SVG/greater-than-solid.png"
+            alt="greater-than"
+          />
+          <img
+            src="./assets/images/home/SVG/less-than-solid.png"
+            alt="less-than"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- desktop Footer -->
+    <div class="hidden lg:block xl:block">
+      <footer class="footer">
+        <div class="footer__title">
+          <hr />
+          <h2>کوئرا لیست</h2>
+          <hr />
+        </div>
+        <section class="footer__part">
+          <ul class="footer__children footer__address">
+            <li>
+              <img
+                class="g-icon"
+                src="./assets/images/home/SVG/fax-solid.svg"
+                alt="fax"
+              />
+              فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱
+            </li>
+            <li>
+              <img
+                class="g-icon"
+                src="./assets/images/home/SVG/phone-solid.svg"
+                alt="phone"
+              />
+              تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱
+            </li>
+            <li>
+              <img
+                class="g-icon"
+                src="./assets/images/home/SVG/location-dot-solid.svg"
+                alt="location"
+              />
+              آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن
+              بست شب بو
+            </li>
+          </ul>
+          <ul class="footer__children">
+            <li class="font-bold">با ما در ارتباط باش</li>
+            <li>
+              اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+              بشی.
+            </li>
+            <li class="relative">
+              <input type="email" name="email" id="email" placeholder="ایمیل" />
+              <button id="email-button" g-button>ارسال</button>
+            </li>
+          </ul>
+        </section>
+        <p class="footer__footer">
+          تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+        </p>
+      </footer>
+    </div>
+
+    <!-- mobile Footer -->
+    <div class="block lg:hidden xl:hidden">
+      <footer class="footer container">
+        <div class="footer__title">
+          <hr />
+          <h2>کوئرا لیست</h2>
+          <hr />
+        </div>
+
+        <section class="mobile__footer-contact">
+          <div class="font-bold">با ما در ارتباط باش</div>
+          <div>
+            اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.
+          </div>
+          <form class="relative">
+            <input type="email" name="email" id="email" placeholder="ایمیل" />
+            <button id="email-button" g-button>ارسال</button>
+          </form>
+        </section>
+
+        <address class="mobile__address-container">
+          <div class="footer__children-style w-1/2 footer__address-style">
+            <img
+              class="g-icon"
+              src="./assets/images/home/SVG/blue-location.png"
+              alt="location"
+            />
+            آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست
+            شب بو
+          </div>
+
+          <div class="footer__phone-container">
+            <div class="footer__phone footer__children-style">
+              <img
+                class="g-icon"
+                src="./assets/images/home/SVG/blue-phone.png"
+                alt="phone"
+              />
+              <div>
+                <p>تلفن پشتیبانی</p>
+                <p>۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+              </div>
+            </div>
+
+            <div class="footer__phone footer__children-style">
+              <img
+                class="g-icon"
+                src="./assets/images/home/SVG/blue-fax.png"
+                alt="fax"
+              />
+              <div>
+                <p>فکس</p>
+                <p>۴۴۴۴۵۵۶۶</p>
+              </div>
+            </div>
+          </div>
+        </address>
+        <p class="footer__footer">
+          تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
