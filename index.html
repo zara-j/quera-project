@@ -8,11 +8,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Quera List</title>
   </head>
-  <body>
-    <header class="home-header mx-auto">
+  <body class="dark:bg-[#060C18]">
+    <header class="home-header mx-auto dark:text-white">
       <!-- Header for mobile screens -->
       <section class="block lg:hidden">
         <div class="mobile-header">
@@ -71,7 +72,7 @@
     </header>
 
     <!-- main title -->
-    <div class="main-title">
+    <div class="main-title dark:text-white">
       <div class="title-context">
         <img
           class="star-1"
@@ -114,7 +115,7 @@
       <div class="circle"></div>
     </div>
 
-    <main class="main container relative mx-auto">
+    <main class="main container relative mx-auto dark:text-white">
       <!-- main image -->
       <img
         class="g-img screen-img"
@@ -165,8 +166,8 @@
       <section class="block lg:hidden">
         <div class="mobile__application">
           <div class="mobile__application__title">
-            <p class="g-description text-right">اپلیکیشن اندروید و IOS</p>
-            <h2 class="g-title text-right">دانلود اپلیکیشن</h2>
+            <p class="g-mobile-description text-right">اپلیکیشن اندروید و IOS</p>
+            <h2 class="g-mobile-title text-right">دانلود اپلیکیشن</h2>
           </div>
           <div class="mobile__image-overlay-container">
             <img
@@ -431,7 +432,7 @@
     </main>
 
     <!-- desktop Footer -->
-    <div class="hidden lg:block xl:block">
+    <div class="hidden lg:block xl:block dark:text-white">
       <footer class="footer">
         <div class="footer__title">
           <hr />
@@ -472,7 +473,7 @@
               اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
               بشی.
             </li>
-            <li class="relative">
+            <li class="input-wrapper relative">
               <input type="email" name="email" id="email" placeholder="ایمیل" />
               <button id="email-button" g-button>ارسال</button>
             </li>
@@ -493,14 +494,14 @@
           <hr />
         </div>
 
-        <section class="mobile__footer-contact">
+        <section class="mobile__footer-contact mx-auto">
           <div class="font-bold">با ما در ارتباط باش</div>
           <div>
             اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.
           </div>
           <form class="relative">
-            <input type="email" name="email" id="email" placeholder="ایمیل" />
-            <button id="email-button" g-button>ارسال</button>
+            <input type="" name="email" id="mobile__email" placeholder="ایمیل" />
+            <button id="mobile__email-button" g-button>ارسال</button>
           </form>
         </section>
 

@@ -11,8 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Concat Me</title>
   </head>
-  <body>
-    <header class="home-header mx-auto">
+  <body class="dark:bg-[#060C18]">
+    <header class="home-header mx-auto dark:text-white">
       <!-- Header for mobile screens -->
       <section class="block lg:hidden">
         <div class="mobile-header">
@@ -72,26 +72,34 @@
 
     <!-- main parts -->
     <main>
-        <!-- for desktop -->
+      <!-- for desktop -->
       <section class="hidden lg:block">
         <div class="about__container container">
           <div class="desktop__about-right">
             <h2 class="desktop__about-title">درباره من</h2>
             <h1 class="desktop__about-title-2">محمد محمدی</h1>
             <div class="desktop__about-p">
-                <p>
-                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
-            </p>
-            <p >
-                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
-            </p>
-            <p >
-                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
-            </p>
+              <p>
+                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای
+                معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه
+                بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب
+                آن استفاده نمایند.
+              </p>
+              <p>
+                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای
+                معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه
+                بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب
+                آن استفاده نمایند.
+              </p>
+              <p>
+                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای
+                معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه
+                بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب
+                آن استفاده نمایند.
+              </p>
             </div>
-            
           </div>
-          <div class="desktop__about-left grid grid-cols-2 gap-4">
+          <div class="desktop__about-left">
             <img
               class="desktop__about-photo"
               src="../assets/images/home/about-me.png"
@@ -99,23 +107,22 @@
             />
             <div class="desktop__intro-container grid grid-cols-2 gap-6">
               <article class="intro-container-info">
-              <h3 class="intro-title">۱۳۷۹</h3>
-              <p class="intro-description">سال تولد</p>
-            </article>
-            <article class="intro-container-info">
-              <h3 class="intro-title">تهران</h3>
-              <p class="intro-description">محل زندگی</p>
-            </article>
-            <article class="intro-container-info">
-              <h3 class="intro-title">۳.۵</h3>
-              <p class="intro-description">سال تجربه کار</p>
-            </article>
-            <article class="intro-container-info">
-              <h3 class="intro-title">۱۰+</h3>
-              <p class="intro-description">مشارکت در پروژه‌</p>
-            </article>  
+                <h3 class="intro-title">۱۳۷۹</h3>
+                <p class="intro-description">سال تولد</p>
+              </article>
+              <article class="intro-container-info">
+                <h3 class="intro-title">تهران</h3>
+                <p class="intro-description">محل زندگی</p>
+              </article>
+              <article class="intro-container-info">
+                <h3 class="intro-title">۳.۵</h3>
+                <p class="intro-description">سال تجربه کار</p>
+              </article>
+              <article class="intro-container-info">
+                <h3 class="intro-title">۱۰+</h3>
+                <p class="intro-description">مشارکت در پروژه‌</p>
+              </article>
             </div>
-            
           </div>
         </div>
       </section>
@@ -207,8 +214,13 @@
               بشی.
             </li>
             <li class="relative">
-              <input type="email" name="email" id="email" placeholder="ایمیل" />
-              <button id="email-button" g-button>ارسال</button>
+              <input
+                type="email"
+                name="email"
+                id="desktop__email"
+                placeholder="ایمیل"
+              />
+              <button id="desktop__email-button" g-button>ارسال</button>
             </li>
           </ul>
         </section>
